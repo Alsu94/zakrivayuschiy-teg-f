@@ -1,1 +1,16 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --font-main: 'Inter-Variable', sans-serif;
+  --font-accent: 'PressStart2P', sans-serif;
+  --fw-card-title: 715;
+  --fw-card-body: 410;
+  --text-color: #000;
+  --border-style: 2px solid var(--text-color);
+  --bg-color: #fff;
+  --shadow-color: rgb(255 255 255 / 0.5);
+  --button-box-shadow: 2px 2px 0 var(--text-color);
+  --contour-color: #000;
+  --animation-fill-color: red;
+  --animation-fill-dark-color: #000;
+}

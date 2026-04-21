@@ -14,10 +14,12 @@
 
   to {
     scale: 1;
+    transform-origin: center;
   }
 
   from {
     scale: 1.25;
+    transform-origin: center;
   }
 }
 

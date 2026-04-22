@@ -182,14 +182,7 @@
   border: var(--border-style);
 }
 
-.card__like-button {
-  width: 130px;
-  height: 38px;
-}
-
-.card__like-button::before,
-.button__save::before,
-.dialog-btn-close::before {
+.button::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -202,11 +195,14 @@
   mix-blend-mode: difference;
 }
 
-.card__like-button:hover::before,
-.button__save:hover::before,
-.dialog-btn-close:hover::before {
+.button:hover::before {
   translate: 0 0;
   transition: translate 0.5s ease-in-out;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
 }
 
 .button__save {
@@ -279,9 +275,7 @@
 }
 
 .card__icon-button:focus,
-.card__like-button:focus,
-.button__save:focus,
-.dialog-btn-close:focus {
+.button:focus {
   outline: none;
 }
 
@@ -290,9 +284,7 @@
   transition: outline 0.3s ease;
 }
 
-.card__like-button:focus-visible,
-.button__save:focus-visible,
-.dialog-btn-close:focus-visible {
+.button:focus-visible {
   box-shadow: var(--button-box-shadow);
   transition: box-shadow 0.3s ease;
 }
